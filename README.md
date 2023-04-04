@@ -13,9 +13,39 @@ This collection contains different connector to realize operation on Salesforce.
 mvn clean package
 ```
 
+# Connection
+
+For each connector, the connection information are the same. The input name is "connection", a JSON content.
+In JSON, parameters are:
 
 
-# Create object
+| Name                  | optional? | Example |
+|-----------------------|-----------|---------|
+| userName              |           |         |
+| password              |           |         |
+| token                 |           |         |
+| authEndPoint          | optional  |         |
+| proxyHost             | optional  |         |
+| proxyPort             | optional  |         |
+| proxyPassword         | optional  |         |
+| proxyUserName         | optional  |         |
+| connectionTimeoutInMs | optional  |         |
+| readTimeoutInMs       | optional  |         |
+| restEndPoint          | optional  |         |
+| serviceEndPoint       | optional  |         |
+
+
+Example:
+
+```json
+{
+  "userName": "pierre",
+  "passwork": "myPassword",
+  "token": "1234"
+}
+````
+
+  # Create object
 ## API
 ### Input
 

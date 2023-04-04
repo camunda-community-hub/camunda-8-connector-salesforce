@@ -59,7 +59,18 @@
       <scope>provided</scope>
     </dependency>
 
-    <!-- Access file  -->
+    <!-- Salesforce API -->
+    <dependency>
+      <groupId>com.force.api</groupId>
+      <artifactId>force-wsc</artifactId>
+      <version>24.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.force.api</groupId>
+      <artifactId>force-partner-api</artifactId>
+      <version>24.0.0</version>
+    </dependency>
+
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>
